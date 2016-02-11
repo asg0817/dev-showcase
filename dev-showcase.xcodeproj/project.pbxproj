@@ -12,6 +12,14 @@
 		C84F007A1C6C65FA00815885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84F00781C6C65FA00815885 /* Main.storyboard */; };
 		C84F007C1C6C65FA00815885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84F007B1C6C65FA00815885 /* Assets.xcassets */; };
 		C84F007F1C6C65FA00815885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84F007D1C6C65FA00815885 /* LaunchScreen.storyboard */; };
+		C84F008E1C6C666B00815885 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C84F008A1C6C666B00815885 /* NotoSans-Bold.ttf */; };
+		C84F008F1C6C666B00815885 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C84F008B1C6C666B00815885 /* NotoSans-BoldItalic.ttf */; };
+		C84F00901C6C666B00815885 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C84F008C1C6C666B00815885 /* NotoSans-Italic.ttf */; };
+		C84F00911C6C666B00815885 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C84F008D1C6C666B00815885 /* NotoSans-Regular.ttf */; };
+		C84F00931C6C696A00815885 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84F00921C6C696A00815885 /* MaterialView.swift */; };
+		C84F00961C6C69BB00815885 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84F00951C6C69BB00815885 /* Constants.swift */; };
+		C84F00981C6C6ED800815885 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84F00971C6C6ED800815885 /* MaterialButton.swift */; };
+		C84F009A1C6C769600815885 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84F00991C6C769600815885 /* MaterialTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		C84F007B1C6C65FA00815885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C84F007E1C6C65FA00815885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C84F00801C6C65FA00815885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C84F008A1C6C666B00815885 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		C84F008B1C6C666B00815885 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C84F008C1C6C666B00815885 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		C84F008D1C6C666B00815885 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		C84F00921C6C696A00815885 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		C84F00951C6C69BB00815885 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C84F00971C6C6ED800815885 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		C84F00991C6C769600815885 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,11 @@
 		C84F00731C6C65FA00815885 /* dev-showcase */ = {
 			isa = PBXGroup;
 			children = (
+				C84F00941C6C69A900815885 /* Util */,
+				C84F00891C6C661F00815885 /* Resource */,
+				C84F00881C6C661B00815885 /* Model */,
+				C84F00871C6C661800815885 /* View */,
+				C84F00861C6C661200815885 /* Controller */,
 				C84F00741C6C65FA00815885 /* AppDelegate.swift */,
 				C84F00761C6C65FA00815885 /* ViewController.swift */,
 				C84F00781C6C65FA00815885 /* Main.storyboard */,
@@ -62,6 +83,49 @@
 				C84F00801C6C65FA00815885 /* Info.plist */,
 			);
 			path = "dev-showcase";
+			sourceTree = "<group>";
+		};
+		C84F00861C6C661200815885 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C84F00871C6C661800815885 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C84F00921C6C696A00815885 /* MaterialView.swift */,
+				C84F00971C6C6ED800815885 /* MaterialButton.swift */,
+				C84F00991C6C769600815885 /* MaterialTextField.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C84F00881C6C661B00815885 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C84F00891C6C661F00815885 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C84F008A1C6C666B00815885 /* NotoSans-Bold.ttf */,
+				C84F008B1C6C666B00815885 /* NotoSans-BoldItalic.ttf */,
+				C84F008C1C6C666B00815885 /* NotoSans-Italic.ttf */,
+				C84F008D1C6C666B00815885 /* NotoSans-Regular.ttf */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		C84F00941C6C69A900815885 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C84F00951C6C69BB00815885 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +160,6 @@
 				TargetAttributes = {
 					C84F00701C6C65FA00815885 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = KXVN3N93X9;
 					};
 				};
 			};
@@ -123,9 +186,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C84F008E1C6C666B00815885 /* NotoSans-Bold.ttf in Resources */,
 				C84F007F1C6C65FA00815885 /* LaunchScreen.storyboard in Resources */,
+				C84F008F1C6C666B00815885 /* NotoSans-BoldItalic.ttf in Resources */,
+				C84F00901C6C666B00815885 /* NotoSans-Italic.ttf in Resources */,
 				C84F007C1C6C65FA00815885 /* Assets.xcassets in Resources */,
 				C84F007A1C6C65FA00815885 /* Main.storyboard in Resources */,
+				C84F00911C6C666B00815885 /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C84F009A1C6C769600815885 /* MaterialTextField.swift in Sources */,
+				C84F00931C6C696A00815885 /* MaterialView.swift in Sources */,
 				C84F00771C6C65FA00815885 /* ViewController.swift in Sources */,
 				C84F00751C6C65FA00815885 /* AppDelegate.swift in Sources */,
+				C84F00961C6C69BB00815885 /* Constants.swift in Sources */,
+				C84F00981C6C6ED800815885 /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "dev-showcase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ang.dev-showcase";
@@ -261,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "dev-showcase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ang.dev-showcase";
